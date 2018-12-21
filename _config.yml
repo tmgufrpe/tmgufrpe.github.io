@@ -16,7 +16,7 @@ keep_files:
 # Site settings
 title: Text Mining Group UFRPE
 subtitle: ""
-url: "https://tmg.ufrpe.github.io" # the base hostname & protocol for your site
+url: "https://tmgufrpe.github.io" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 baseurl: "/airspace-jekyll"
 cover: "/assets/cover.png"
