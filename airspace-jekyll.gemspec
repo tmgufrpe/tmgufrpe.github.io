@@ -3,11 +3,11 @@
 Gem::Specification.new do |spec|
   spec.name          = ""
   spec.version       = "0.1.0"
-  spec.authors       = ["ndrewtl"]
-  spec.email         = ["ndrewtl@users.noreply.github.com"]
+  spec.authors       = ["rodriguesfas"]
+  spec.email         = ["franciscosouzaacer@gmail.com"]
 
-  spec.summary       = %q{A port of ThemeFisher's Airspace theme. https://github.com/themefisher/airspace-free-html5-agency-template}
-  spec.homepage      = "http://example.com"
+  spec.summary       = %q{}
+  spec.homepage      = ""
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(_layouts|_includes|_sass|LICENSE|README)/i}) }

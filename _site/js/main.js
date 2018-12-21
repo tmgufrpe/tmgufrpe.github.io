@@ -5,13 +5,10 @@ $(document).ready(function(){
 
 
 	$("#testimonial-slider").owlCarousel({
-	    paginationSpeed : 500,      
+	    paginationSpeed : 1000,      
 	    singleItem:true,
 	    autoPlay: 3000,
 	});
-
-
-
 
 	$("#clients-logo").owlCarousel({
 		autoPlay: 3000,

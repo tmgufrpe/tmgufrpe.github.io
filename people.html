@@ -1,0 +1,35 @@
+---
+layout: page
+title: People
+permalink: /people/
+---
+
+
+
+<!-- Slider Start -->
+<section id="people-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Our Brilliant Minds Behind it All!</h1>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+{% for post in site.categories.people %}
+<div class="post-area">
+  <a href="{{ post.url | prepend: site.baseurl }}" class="bold">
+      <img src="{{ post.image }}" height="100px" alt="Member" style="border-radius: 8px;">
+    {{ post.title }}
+  </a>
+  <p>
+    {{ post.content | strip_html | truncatewords: 50 }}
+  </p>
+</div>
+{% endfor %}

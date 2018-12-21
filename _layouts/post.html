@@ -2,16 +2,42 @@
 layout: page
 ---
 
+<!-- Slider Start -->
+{% if page.image %}
+<section id="people-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Get the latest on what we're doing</h1>
+          <p>Catch up with us, anytime and anywhere</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+
+
 <div class="post">
   <!-- Wrapper Start -->
   <section id="intro" style="border: 1px dotted #ddd;">
     <div class="container">
       <div class="row">
         <div>
+          {% if page.image %}
+          <img src="{{ page.image }}" alt="Member" style="border-radius: 8px; height:100px; width:100px; ">
+          {% endif %}
           <div class="block">
             <h1>{{ page.title }}</h1>
+            {% if page.cvlattes %}
+            <p>CV Lattes: <a href="{{ page.cvlattes }}" target="blank">{{ page.cvlattes }}</a></p>
+            {% endif %}
             <div class="post-info-wrapper">
-              <p class="italic">By <span class="bold">{{ page.author }}</span> on <span class="bold">{{ page.date | date: "%B %-d, %Y" }}</span></p>
+              <p class="italic">By <span class="bold">{{ page.author }}</span> on <span class="bold">{{ page.date |
+                  date: "%B %-d, %Y" }}</span>
+                </p>
             </div>
             <hr />
             <p>{{ content }}</p>
@@ -22,5 +48,9 @@ layout: page
   </section>
 </div>
 <p class="center-text" style="padding: 30px;">
+  {% if page.image %}
+  <a href="{{ site.baseurl }}/people">Back to people</a>
+  {% else %}
   <a href="{{ site.baseurl }}/blog">Back to blog</a>
+  {% endif %}
 </p>

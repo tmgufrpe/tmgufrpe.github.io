@@ -1,16 +1,11 @@
-- name: Rose Ray
-  title: CEO-Themefisher
-  testimonial: "This company created an e-commerce site with the tools to make our business a success, with innovative ideas. We feel that our site has unique elements that make us stand out from the crowd."
-  image: img/item-img1.jpg
-- name: Rose Ray sr.
-  title: CEO-Themefisher
-  testimonial: "An e-commerce site was created by this company with the tools to make our business a success, with innovative ideas. We feel that our site has unique elements that make us stand out from the crowd."
-  image: img/item-img1.jpg
-- name: Rose Ray jr.
-  title: CEO-Themefisher
-  testimonial: "With the tools to make our business a success, this company created an e-commerce site, with innovative ideas. We feel that our site has unique elements that make us stand out from the crowd."
-  image: img/item-img1.jpg
-- name: Rose Ray III
-  title: CEO-Themefisher
-  testimonial: "We feel that our site has unique elements that make us stand out from the crowd. This company created an e-commerce site with the tools to make our business a success, with innovative ideas."
-  image: img/item-img1.jpg
+- name: Bernard
+  title: LIS Laboratoire d’Informatique et Systèmes
+  testimonial: "Le LIS Laboratoire d’Informatique et Systèmes est une nouvelle structure issue de la fusion de deux UMR : le Laboratoire d’Informatique Fondamentale de Marseille (LIF) UMR 7279 et le Laboratoire des Sciences de l’Information et des Systèmes (LSIS) UMR 7296. C’est une Unité Mixte de Recherche (UMR) sous tutelles du Centre National de la Recherche Scientifique (CNRS) rattachée à l’Institut des sciences de l'information et de leurs interactions (INS2I), de l’Université d’Aix-Marseille (AMU) et de l’Université de Toulon (UTLN)."
+  image: img/parterns/cropped-logo_LIS_color-2.png
+  url: http://www.lis-lab.fr/
+
+- name: Robson Fidalgo
+  title: Assistive Comunicação Aumentativa e Alternativa 
+  testimonial: "O Assistive é um Grupo de Pesquisa que visa desenvolver tecnologias inovadoras em Comunicação Aumentativa e Alternativa (CAA). O Grupo foi fundado em Janeiro de 2014 no Centro de Informática (CIn) da Universidade Federal de Pernambuco (UFPE), faz parte do Centro Nacional de Referência em Tecnologia Assistiva (CNRTA) e recebe financiamento do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e da Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)."
+  image: img/parterns/logo-assistive.png
+  url: http://assistive.cin.ufpe.br/

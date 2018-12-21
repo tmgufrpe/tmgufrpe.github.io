@@ -32,11 +32,6 @@
 <script src="/js/main.js"></script>
 
 
-
-
-<link rel="stylesheet" type="text/css" href="/css/base.css" />
-
-
 <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 
 
@@ -76,8 +71,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">
-              <img src="/img/logo.jpg" height="50px" alt="Logo">
+            <a class="navbar-brand" href="/">
+              <img src="/img/logo.jpg" height="50px" alt="UFRPE" title="">
             </a>
             <p>Text Mining Group UFRPE</p>
           </div>
@@ -85,12 +80,12 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">Home</a></li>
-                <!--li><a href="/work">Work</a></li -->
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="#">Publications</a></li>
+                <li><a href="/people">People</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Group</a></li>
+                <li><a href="#">Publications</a></li>
                 <li><a href="/contact">Contact</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <!--li><a href="/work">Work</a></li -->
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -116,8 +111,11 @@
   </div>
 </section>
 
+
+
+
 <div class="post-area">
-  <a href="/2016/05/20/welcome-to-jekyll.html" class="bold">Welcome to jekyll!</a>
+  <a href="/news/2016/05/20/welcome-to-jekyll.html" class="bold">Welcome to jekyll!</a>
   <p class="post-date">20 May 2016</p>
   <p>
     You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...
@@ -125,7 +123,7 @@
 </div>
 
 <div class="post-area">
-  <a href="/2016/05/20/this-post-demonstrates-post-content-styles.html" class="bold">This post demonstrates post content styles</a>
+  <a href="/news/2016/05/20/this-post-demonstrates-post-content-styles.html" class="bold">This post demonstrates post content styles</a>
   <p class="post-date">20 May 2016</p>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Some great heading (h2) Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et,...
@@ -133,7 +131,7 @@
 </div>
 
 <div class="post-area">
-  <a href="/2016/05/20/super-long-article.html" class="bold">Some articles are just so long they deserve a really long title to see if things will break well</a>
+  <a href="/news/2016/05/20/super-long-article.html" class="bold">Some articles are just so long they deserve a really long title to see if things will break well</a>
   <p class="post-date">20 May 2016</p>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris...
@@ -141,7 +139,7 @@
 </div>
 
 <div class="post-area">
-  <a href="/2016/05/20/my-example-post.html" class="bold">My Example Post</a>
+  <a href="/news/2016/05/20/my-example-post.html" class="bold">My Example Post</a>
   <p class="post-date">20 May 2016</p>
   <p>
     Eos eu docendi tractatos sapientem, brute option menandri in vix, quando vivendo accommodare te ius. Nec melius fastidii constituam id, viderer theophrastus ad sit, hinc semper periculis cum id. Noluisse postulant assentior est in, no choro sadipscing repudiandae vix. Vis in euismod delenit dignissim. Ex quod nostrum sit, suas decore...
@@ -157,24 +155,30 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+        <a href="http://www.ufrpe.br/" target="blank">
+          <img src="/img/footer/ufrpe.jpg" height="100px">
+        </a>
+        <br>
+        <a href="http://www.ufrpe.br/" target="blank">UFRPE</a> |
+        <a href="http://www.ppgia.ufrpe.br/" target="blank">PPGIA</a> |
+        <a href="http://www.dc.ufrpe.br/" target="blank">DC</a>
+        <br>
+        <hr>
         <div class="footer-manu">
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="/contact">Contact us</a></li>
-            <li><a href="#">How it works</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/people">People</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Publications</a></li>
+            <li><a href="/contact">Contact</a></li>
             <li><a href="/blog">Blog</a></li>
-            <li><a href="#">Terms</a></li>
           </ul>
         </div>
-        <img src="img/ufrpe.jpg" height="100px">
         <p>&copy; 2018 Text Mining Group UFRPE | Design &amp; Developed by <a href="https://rodriguesfas.com.br">RodriguesFAS</a>.</p>
       </div>
     </div>
   </div>
 </footer>
-
-
-      <script src="/js/demo.js"></script>
 
     </body>
 </html>
