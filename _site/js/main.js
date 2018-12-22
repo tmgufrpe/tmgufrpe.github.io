@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$("#portfolio-contant-active").mixItUp();
 
 
-	$("#testimonial-slider").owlCarousel({
+	$("#parterns-slider").owlCarousel({
 	    paginationSpeed : 1000,      
 	    singleItem:true,
 	    autoPlay: 3000,

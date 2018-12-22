@@ -2,22 +2,6 @@
 layout: page
 ---
 
-<!-- Slider Start -->
-{% if page.image %}
-<section id="people-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h1>Get the latest on what we're doing</h1>
-          <p>Catch up with us, anytime and anywhere</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
-
 
 
 <div class="post">
@@ -31,14 +15,28 @@ layout: page
           {% endif %}
           <div class="block">
             <h1>{{ page.title }}</h1>
-            {% if page.cvlattes %}
-            <p>CV Lattes: <a href="{{ page.cvlattes }}" target="blank">{{ page.cvlattes }}</a></p>
+
+            {% if page.image_project %}
+            <p>
+              <b>Status:</b> {{ page.status }} <br>
+              <b>Category:</b> {{ page.subtitle }} <br>
+              <b>Author:</b> {{ page.author }} <br>
+            </p>
             {% endif %}
+
+            {% if page.cvlattes %}
+            CV Lattes: <a href="{{ page.cvlattes }}" target="blank">{{ page.cvlattes }}</a>
+            {% endif %}
+
             <div class="post-info-wrapper">
+              {% if page.image_project %}
+
+              {% else %}
               <p class="italic">By <span class="bold">{{ page.author }}</span> on <span class="bold">{{ page.date |
                   date: "%B %-d, %Y" }}</span>
-                </p>
+                {% endif %}
             </div>
+
             <hr />
             <p>{{ content }}</p>
           </div>
@@ -50,6 +48,8 @@ layout: page
 <p class="center-text" style="padding: 30px;">
   {% if page.image %}
   <a href="{{ site.baseurl }}/people">Back to people</a>
+  {% else if page.image_project %}
+  <a href="{{ site.baseurl }}/projects">Back to projects</a>
   {% else %}
   <a href="{{ site.baseurl }}/blog">Back to blog</a>
   {% endif %}

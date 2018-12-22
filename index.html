@@ -80,8 +80,8 @@ permalink: /
 
 
 
-<!-- Service Start -->
-<section id="service">
+<!-- projects Start -->
+<section id="projects">
   <div class="container">
     <div class="row">
       <div class="section-title">
@@ -90,73 +90,21 @@ permalink: /
       </div>
     </div>
     <div class="row ">
+      {% if site.data.projects.size > 0 %}
 
+      {% for category in site.data.projects %}
       <div class="col-sm-6 col-md-4">
-        <div class="service-item">
-          <img src="img/information-extraction.png" height="80px">
-          <h4>Information Extraction</h4>
+        <div class="projects-item">
+          <a href="{{ site.baseurl }}/projects">
+            <img src="{{ category.image }}" height="80px">
+            <h4>{{ category.title }}</h4>
+          </a>
           <p></p>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="service-item">
-          <img src="img/sentiment-analysis.png" height="80px">
-          <h4>Sentiment Analysis</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="service-item">
-          <img src="img/relational-learning-for-text-mining.png" height="80px">
-          <h4>Relational Learning for Text Mining</h4>
-          <p></p>
-        </div>
-      </div>
+      {% endfor %}
 
-      <div class="col-sm-6 col-md-4">
-        <div class="service-item">
-          <img src="img/deep-learning.png" height="80px">
-          <h4>Deep Learning for Text Mining</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="service-item">
-          <img src="img/summarization.png" height="80px">
-          <h4>Automatic Summarization</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="service-item">
-          <img src="img/text-simplification.png" height="80px">
-          <h4>Text Simplification</h4>
-          <p></p>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="service-item">
-          <img src="img/clustering.png" height="80px">
-          <h4>Text Classification and Text Clustering</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="service-item">
-          <img src="img/caa.png" height="80px">
-          <h4>NLP applied to Augmentative and Alternative Communication (AAC) Systems</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="service-item">
-          <img src="img/text-analysis.png" height="80px">
-          <h4>Text Analytics</h4>
-          <p></p>
-        </div>
-      </div>
-
+      {% endif %}
     </div>
   </div>
 </section>
@@ -184,15 +132,19 @@ permalink: /
 
 
 <!-- Content Start -->
-<section id="testimonial">
+<section id="parterns">
+
   <div class="container">
+
     <div class="row">
       <div class="section-title text-center">
         <h2>Research Parterns</h2>
         <p></p>
       </div>
     </div>
+
     <div class="row">
+
       <!--div class="col-md-6">
         {% if site.data.funfacts.size > 0 %}
         <div class="block">
@@ -210,11 +162,12 @@ permalink: /
         </div>
         {% endif %}
       </div-->
+
       <div class="col-md-12">
-        {% if site.data.testimonials.size > 0 %}
-        <div class="testimonial-carousel">
-          <div id="testimonial-slider" class="owl-carousel">
-            {% for tm in site.data.testimonials %}
+        {% if site.data.parterns.size > 0 %}
+        <div class="parterns-carousel">
+          <div id="parterns-slider" class="owl-carousel">
+            {% for tm in site.data.parterns %}
             <div>
               <img src="img/cotation.png" alt="IMG">
               <p>{{ tm.testimonial }}</p>
@@ -228,6 +181,9 @@ permalink: /
         </div>
         {% endif %}
       </div>
+
     </div>
+
   </div>
+
 </section>

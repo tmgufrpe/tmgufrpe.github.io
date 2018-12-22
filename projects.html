@@ -1,0 +1,27 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+<div class="post-area">
+  <p class="bold">
+    <h1>All Projects</h1>
+  </p>
+</div>
+
+
+{% for post in site.categories.projects %}
+<div class="post-area">
+  <a href="{{ post.url | prepend: site.baseurl }}" class="bold">
+    <img src="{{ post.image_project }}" height="50px" alt="Member" style="border-radius: 8px;">
+    {{ post.title }}
+  </a>
+  <p>
+    <b>Status:</b> {{ post.status }} <br>
+    <b>Category:</b> {{ post.subtitle }} <br>
+    <b>Author:</b> {{ post.author }} <br>
+    <b>Short description:</b> {{ post.content | strip_html | truncatewords: 50 }}
+  </p>
+</div>
+{% endfor %}
