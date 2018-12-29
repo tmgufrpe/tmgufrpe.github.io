@@ -38,19 +38,23 @@ layout: page
             </div>
 
             <hr />
+
             <p>{{ content }}</p>
+
           </div>
         </div><!-- .col-md-7 close -->
       </div>
     </div>
   </section>
+
 </div>
+
 <p class="center-text" style="padding: 30px;">
-  {% if page.image %}
-  <a href="{{ site.baseurl }}/people">Back to people</a>
-  {% else if page.image_project %}
-  <a href="{{ site.baseurl }}/projects">Back to projects</a>
-  {% else %}
-  <a href="{{ site.baseurl }}/blog">Back to blog</a>
+  {% if page.categories.people %}
+  <a href="{{ site.baseurl }}/people">Back to People</a>
+  {% else if page.categories.projects %}
+  <a href="{{ site.baseurl }}/projects">Back to Projects</a>
+  {% else if page.categories.news %}
+  <a href="{{ site.baseurl }}/blog">Back to Blog</a>
   {% endif %}
 </p>
