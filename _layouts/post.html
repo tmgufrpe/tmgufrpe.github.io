@@ -50,11 +50,11 @@ layout: page
 </div>
 
 <p class="center-text" style="padding: 30px;">
-  {% if page.categories.people %}
+  {% if page.categories contains 'people' %}
   <a href="{{ site.baseurl }}/people">Back to People</a>
-  {% else if page.categories.projects %}
+  {% else if page.categories contains 'projects' %}
   <a href="{{ site.baseurl }}/projects">Back to Projects</a>
-  {% else if page.categories.news %}
+  {% else if page.categories contains 'news' %}
   <a href="{{ site.baseurl }}/blog">Back to Blog</a>
   {% endif %}
 </p>
