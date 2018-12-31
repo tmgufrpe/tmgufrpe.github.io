@@ -6,6 +6,7 @@ image: /img/people/saulo.jpg
 subtitle: 
 date: 2018-12-18 17:16:27
 author: Text Mining Group UFRPE
+email: saulolucas.gm@gmail.com 
 cvlattes: http://lattes.cnpq.br/4946764289657522
 ---
 

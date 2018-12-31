@@ -24,6 +24,12 @@ layout: page
             </p>
             {% endif %}
 
+            {% if page.email %}
+            Email: <a href="{{ page.email }}" target="blank">{{ page.email }}</a>
+            {% endif %}
+
+            <br>
+
             {% if page.cvlattes %}
             CV Lattes: <a href="{{ page.cvlattes }}" target="blank">{{ page.cvlattes }}</a>
             {% endif %}

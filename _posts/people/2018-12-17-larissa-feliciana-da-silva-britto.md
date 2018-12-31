@@ -6,6 +6,7 @@ image: /img/people/larissa.gif
 subtitle: 
 date: 2018-12-17 17:16:27
 author: Text Mining Group UFRPE
+email: larissafelicianasilva@gmail.com 
 cvlattes: http://lattes.cnpq.br/5058497100007411
 ---
 
