@@ -1,2 +1,3 @@
-source "#"
-gemspec
+source "https://rubygems.org"
+gem "jekyll"
+gem "jekyll-gist"
