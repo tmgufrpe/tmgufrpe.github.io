@@ -22,7 +22,9 @@
 
 <!-- Js -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+</script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/owl.carousel.min.js"></script>
 <script src="/js/plugins.js"></script>
@@ -32,7 +34,32 @@
 <script src="/js/main.js"></script>
 
 
-<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+<script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+        var e, t = document.createElement("style");
+        return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+    };
+    supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+</script>
+
+<link rel="stylesheet" href="/js/tagcanvas/tagcanvas.min.js" />
+<script type="text/javascript">
+    window.onload = function() {
+        try {
+            TagCanvas.Start('myCanvas', 'tags', {
+                textColour: '#ff0000',
+                outlineColour: '#ff00ff',
+                reverse: true,
+                depth: 0.8,
+                maxSpeed: 0.05
+            });
+        } catch (e) {
+            // something went wrong, hide the canvas container
+            document.getElementById('myCanvasContainer').style.display = 'none';
+        }
+    };
+</script>
 
   </head>
   <body>
@@ -69,7 +96,6 @@
                 <li><a href="#parterns">Research Partners</a></li>
                 <li><a href="/publications">Publications</a></li>
                 <li><a href="/contact">Contact</a></li>
-                <li><a href="/blog">Blog</a></li>
                 <!--li><a href="/work">Work</a></li -->
               </ul>
             </div><!-- /.navbar-collapse -->
@@ -118,6 +144,8 @@ Computer Science student from UFRPE since 2016. Focusing on Artificial Intellige
 <br /><br />
 Current research: NLP - Text Mining - Sentiment Analysis <br />
 Current project: <a href="https://github.com/saulolks/CDSentimentAnalysis-Project" target="blank">https://github.com/saulolks/CDSentimentAnalysis-Project</a></p>
+
+<p>Linkedin: https://www.linkedin.com/in/saulolks/</p>
 </p>
 
           </div>
@@ -138,32 +166,40 @@ Current project: <a href="https://github.com/saulolks/CDSentimentAnalysis-Projec
 
     <!-- footer Start -->
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <a href="http://www.ufrpe.br/" target="blank">
-          <img src="/img/footer/ufrpe.jpg" height="100px">
-        </a>
-        <br>
-        <a href="http://www.ufrpe.br/" target="blank">UFRPE</a> |
-        <a href="http://www.ppgia.ufrpe.br/" target="blank">PPGIA</a> |
-        <a href="http://www.dc.ufrpe.br/" target="blank">DC</a>
-        <br>
-        <hr>
-        <div class="footer-manu">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/people">People</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Publications</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/blog">Blog</a></li>
-          </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="http://www.ufrpe.br/" target="blank">
+                    <img src="/img/footer/ufrpe.jpg" height="100px">
+                </a>
+                <a href="http://www.lis-lab.fr/" target="blank">
+                    <img src="/img/footer/cropped-logo_LIS_color-2.png" height="100px">
+                </a>
+                <a href="http://assistive.cin.ufpe.br/" target="blank">
+                    <img src="/img/footer/logo-assistive.png" height="100px">
+                </a>
+                <br>
+                <a href="http://www.ufrpe.br/" target="blank">UFRPE</a> |
+                <a href="http://www.ppgia.ufrpe.br/" target="blank">PPGIA</a> |
+                <a href="http://www.dc.ufrpe.br/" target="blank">DC</a> |
+                <a href="http://www.lis-lab.fr/" target="blank">LIS</a> |
+                <a href="http://assistive.cin.ufpe.br/" target="blank">ASSISTIVE</a>
+                <br>
+                <hr>
+                <div class="footer-manu">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/people">People</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <p>&copy; 2018 Text Mining Group UFRPE | Design &amp; Developed by <a href="https://rodriguesfas.com.br">RodriguesFAS</a>.</p>
+            </div>
         </div>
-        <p>&copy; 2018 Text Mining Group UFRPE | Design &amp; Developed by <a href="https://rodriguesfas.com.br">RodriguesFAS</a>.</p>
-      </div>
     </div>
-  </div>
 </footer>
 
     </body>

@@ -2,12 +2,13 @@
 layout: post
 categories: people
 name: Raissa Camelo
-image: /img/people/profile.png
+image: /img/people/raissa.jpg
 subtitle: 
 date: 2018-12-13 17:16:27
 author: Text Mining Group UFRPE
 email: 
 cvlattes: http://lattes.cnpq.br/6761163457130594
+status: false
 ---
 
 <b>Short Bio</b><br/>

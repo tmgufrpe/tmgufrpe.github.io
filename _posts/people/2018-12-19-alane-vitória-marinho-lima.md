@@ -8,6 +8,7 @@ date: 2018-12-19 17:16:27
 author: Text Mining Group UFRPE
 email: alane.vitoria16@gmail.com 
 cvlattes: http://lattes.cnpq.br/8915298266829544
+status: true
 ---
 
 <b>Short Bio</b><br/>

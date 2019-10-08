@@ -22,7 +22,9 @@
 
 <!-- Js -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+</script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/owl.carousel.min.js"></script>
 <script src="/js/plugins.js"></script>
@@ -32,7 +34,32 @@
 <script src="/js/main.js"></script>
 
 
-<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+<script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+        var e, t = document.createElement("style");
+        return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+    };
+    supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+</script>
+
+<link rel="stylesheet" href="/js/tagcanvas/tagcanvas.min.js" />
+<script type="text/javascript">
+    window.onload = function() {
+        try {
+            TagCanvas.Start('myCanvas', 'tags', {
+                textColour: '#ff0000',
+                outlineColour: '#ff00ff',
+                reverse: true,
+                depth: 0.8,
+                maxSpeed: 0.05
+            });
+        } catch (e) {
+            // something went wrong, hide the canvas container
+            document.getElementById('myCanvasContainer').style.display = 'none';
+        }
+    };
+</script>
 
   </head>
   <body>
@@ -69,7 +96,6 @@
                 <li><a href="#parterns">Research Partners</a></li>
                 <li><a href="/publications">Publications</a></li>
                 <li><a href="/contact">Contact</a></li>
-                <li><a href="/blog">Blog</a></li>
                 <!--li><a href="/work">Work</a></li -->
               </ul>
             </div><!-- /.navbar-collapse -->
@@ -81,7 +107,10 @@
 </header><!-- header close -->
 
 
-    
+    <h1>Collaborators</h1>
+
+
+
 <div class="post-area">
   <a href="/people/2018/12/21/rinaldo-jose-de-lima.html" class="bold">
       <img src="/img/people/rinaldo.gif" height="100px" alt="Member" style="border-radius: 8px;">
@@ -92,15 +121,31 @@
   </p>
 </div>
 
+
+
 <div class="post-area">
-  <a href="/people/2018/12/21/rafael-melo.html" class="bold">
-      <img src="/img/people/rafael.gif" height="100px" alt="Member" style="border-radius: 8px;">
-    Rafael Melo
+  <a href="/people/2018/12/21/vanilson-buregio.html" class="bold">
+      <img src="/img/people/hilario.gif" height="100px" alt="Member" style="border-radius: 8px;">
+    Vanilson Buregio
   </a>
   <p>
-    Prof. Colaborador da equipe. Short BioRafael Ferreira Leite de Mello is a Computer Scientist at the Federal University of Alagoas 2009. He completed his PhD in Computer Science at the Federal University of Pernambuco in 2015. He is currently an Adjunct Professor at the Federal Rural University of Pernambuco. He...
+    Prof. Colaborador da equipe. Short Bio Vanilson Burégio is currently Assistant Professor in the Computing Department of Federal Rural University of Pernambuco (UFRPE). He has BSc, MSc and PhD in Computer Science from Federal University of Pernambuco, Recife, Brazil. He is one of the proponents and pioneers of the Social...
   </p>
 </div>
+
+
+
+<div class="post-area">
+  <a href="/people/2018/12/21/hilario-tomaz-alvez-de-oliveira.html" class="bold">
+      <img src="/img/people/vanilson.jpg" height="100px" alt="Member" style="border-radius: 8px;">
+    Hilario Tomaz Alvez De Oliveira
+  </a>
+  <p>
+    Prof. Colaborador da equipe. Short Bio Hilário Tomaz Alves de Oliveira is Bachelor in Computer Science from the University Center of João Pessoa (UNIPÊ) (2010). He has a Masters (2013) and Doctorate (2018) in Computer Science from the Informatics Center (CIN-UFPE) in the area of Text Mining, having as research...
+  </p>
+</div>
+
+
 
 <div class="post-area">
   <a href="/people/2018/12/21/francisco-de-assis-de-souza-rodrigues.html" class="bold">
@@ -108,9 +153,11 @@
     Francisco de Assis de Souza Rodrigues
   </a>
   <p>
-    Short Bio Master of Science in Computer Science - UFPE CIn (2017), Graduate in Systems Analysis and Development - UniLeão (2015), Graduate in Technology in Industrial Automation IFCE - Federal Institute of Ceará Campus Juazeiro do Norte (2017 - Teaching Higher Education IDJ - Don José Institute (2016). Founder and...
+    Short Bio Master of Science in Computer Science - UFPE CIn (2019), Graduate in Systems Analysis and Development - UniLeão (2015), Graduate in Technology in Industrial Automation IFCE - Federal Institute of Ceará Campus Juazeiro do Norte (2017 - Teaching Higher Education IDJ - Don José Institute (2016). Founder and...
   </p>
 </div>
+
+
 
 <div class="post-area">
   <a href="/people/2018/12/19/alane-vit%C3%B3ria-marinho-lima.html" class="bold">
@@ -122,6 +169,8 @@
   </p>
 </div>
 
+
+
 <div class="post-area">
   <a href="/people/2018/12/18/saulo-lucas-gomes-ferreira.html" class="bold">
       <img src="/img/people/saulo.jpg" height="100px" alt="Member" style="border-radius: 8px;">
@@ -132,35 +181,13 @@
   </p>
 </div>
 
-<div class="post-area">
-  <a href="/people/2018/12/17/larissa-feliciana-da-silva-britto.html" class="bold">
-      <img src="/img/people/larissa.gif" height="100px" alt="Member" style="border-radius: 8px;">
-    Larissa Feliciana Da Silva Britto
-  </a>
-  <p>
-    Short Bio Studies computer science at Universidade Federal Rural de Pernambuco (UFRPE) since 2015. Researcher in Artificial Inteligence with emphasis on Machine Learning, Natural Language Processing (Text Mining, Text Classification and Sentiment Analysis), Digital Image Processing and Computer Vision. There she works with automatic plant species identification with differents features...
-  </p>
-</div>
 
-<div class="post-area">
-  <a href="/people/2018/12/16/roberto-marcio-mota-de-lima.html" class="bold">
-      <img src="/img/people/roberto.jpg" height="100px" alt="Member" style="border-radius: 8px;">
-    Roberto Marcio Mota De Lima
-  </a>
-  <p>
-    Short Bio Roberto Márcio Mota de Lima MSc student in Applied Informatics – Sentiment Analysis at UFRPE. Licentiate degree in Computer Science at UFRPE. MSc in Biotechnology at LIKA-UFPE. Bachelor´s degree in Biomedicine at UFPE. Graduated in Biomedicine with a Masters in Biotechnology, he worked for 4 years with the...
-  </p>
-</div>
 
-<div class="post-area">
-  <a href="/people/2018/12/15/geraldo-junior.html" class="bold">
-      <img src="/img/people/profile.png" height="100px" alt="Member" style="border-radius: 8px;">
-    Geraldo Junior
-  </a>
-  <p>
-    Short Bio MSc in Applied Informatics from the Federal Rural University of Pernambuco (UFRPE). Bachelor with honorable mention (Academic Láurea) in Information Systems by UFRPE (2016). Technician in Industrial Chemistry by the State Technical School Professor Agamemnom Magalhães - ETEPAM (2013). He has experience and articles published in the areas...
-  </p>
-</div>
+
+
+
+
+
 
 <div class="post-area">
   <a href="/people/2018/12/15/hilario-tomaz-alves-de-oliveira.html" class="bold">
@@ -172,9 +199,115 @@
   </p>
 </div>
 
+
+
+
+
+<div class="post-area">
+  <a href="/people/2018/12/13/filipe-augusto-vieira-gomes.html" class="bold">
+      <img src="/img/people/filipe.jpeg" height="100px" alt="Member" style="border-radius: 8px;">
+    Filipe Augusto Vieira Gomes
+  </a>
+  <p>
+    Short Bio Filipe Gomes (GOMES, F.A.V.) is a MSc Student in Applied Informatics at UFRPE. Holds a Licentiate degree in Computer Science at IF Sertão-PE. As a Licentiate in Computing he worked with researches in the educational field, mostly with new teaching methods and sentiment analysis at the school environment....
+  </p>
+</div>
+
+
+
+<div class="post-area">
+  <a href="/people/2018/12/13/alesson-delmiro-francisco.html" class="bold">
+      <img src="/img/people/alesson.jpg" height="100px" alt="Member" style="border-radius: 8px;">
+    Alesson Delmiro Francisco
+  </a>
+  <p>
+    Short Bio Alesson Delmiro Francisco is a undergraduate student at Federal Rural University of Pernambuco (UFRPE). His research interests include Text mining, sentiment analysis and aspect based sentiment analysis. Research Title: Aspect Term Extraction in Sentiment Analysis Abstract The increasing use of the Internet in many directions has created a...
+  </p>
+</div>
+
+
+
+<div class="post-area">
+  <a href="/people/2018/12/13/matheus-rodrigues-de-souza-felix.html" class="bold">
+      <img src="/img/people/matheus.gif" height="100px" alt="Member" style="border-radius: 8px;">
+    Matheus Rodrigues De Souza Felix
+  </a>
+  <p>
+    Short Bio Matheus Rodrigues de Souza Félix Has high school-second-degree education College and Child Jesus Course (2015). Has experience in Computer Science, focusing on Computer Systems. Bachelor in Information Systems, UFRPE. PROJECT WITH SCIENTIFIC OR TECHNOLOGICAL INNOVATION 2019 – Present: Relation Extraction. Supervisor: Rinaldo Lima. 2019 – Present: Information Extraction...
+  </p>
+</div>
+
+
+
+<div class="post-area">
+  <a href="/people/2018/12/13/pedro-assis.html" class="bold">
+      <img src="/img/people/pedro.jpg" height="100px" alt="Member" style="border-radius: 8px;">
+    Pedro Assis
+  </a>
+  <p>
+    Short Bio Pedro Assis is Undergraduate student of Computer Science at UFRPE (Federal Rural University of Pernambuco). Researcher in the field of Artificial Intelligence and Text Mining, data analysis, machine learning, and artificial neural networks. My current research work is on sentiment analysis, comparing various types of preprocessing, classification algorithms...
+  </p>
+</div>
+
+
+
+<h1>Ex-collaborators</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="post-area">
+  <a href="/people/2018/12/17/larissa-feliciana-da-silva-britto.html" class="bold">
+      <img src="/img/people/larissa.gif" height="100px" alt="Member" style="border-radius: 8px;">
+    Larissa Feliciana Da Silva Britto
+  </a>
+  <p>
+    Short Bio Studies computer science at Universidade Federal Rural de Pernambuco (UFRPE) since 2015. Researcher in Artificial Inteligence with emphasis on Machine Learning, Natural Language Processing (Text Mining, Text Classification and Sentiment Analysis), Digital Image Processing and Computer Vision. There she works with automatic plant species identification with differents features...
+  </p>
+</div>
+
+
+
+<div class="post-area">
+  <a href="/people/2018/12/16/roberto-marcio-mota-de-lima.html" class="bold">
+      <img src="/img/people/roberto.jpg" height="100px" alt="Member" style="border-radius: 8px;">
+    Roberto Marcio Mota De Lima
+  </a>
+  <p>
+    Short Bio Roberto Márcio Mota de Lima MSc student in Applied Informatics – Sentiment Analysis at UFRPE. Licentiate degree in Computer Science at UFRPE. MSc in Biotechnology at LIKA-UFPE. Bachelor´s degree in Biomedicine at UFPE. Graduated in Biomedicine with a Masters in Biotechnology, he worked for 4 years with the...
+  </p>
+</div>
+
+
+
+<div class="post-area">
+  <a href="/people/2018/12/15/geraldo-junior.html" class="bold">
+      <img src="/img/people/profile.png" height="100px" alt="Member" style="border-radius: 8px;">
+    Geraldo Junior
+  </a>
+  <p>
+    Short Bio MSc in Applied Informatics from the Federal Rural University of Pernambuco (UFRPE). Bachelor with honorable mention (Academic Láurea) in Information Systems by UFRPE (2016). Technician in Industrial Chemistry by the State Technical School Professor Agamemnom Magalhães - ETEPAM (2013). He has experience and articles published in the areas...
+  </p>
+</div>
+
+
+
+
+
 <div class="post-area">
   <a href="/people/2018/12/13/raissa-camelo.html" class="bold">
-      <img src="/img/people/profile.png" height="100px" alt="Member" style="border-radius: 8px;">
+      <img src="/img/people/raissa.jpg" height="100px" alt="Member" style="border-radius: 8px;">
     Raissa Camelo
   </a>
   <p>
@@ -186,34 +319,51 @@
 
 
 
+
+
+
+
+
+
+
+
+
     <!-- footer Start -->
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <a href="http://www.ufrpe.br/" target="blank">
-          <img src="/img/footer/ufrpe.jpg" height="100px">
-        </a>
-        <br>
-        <a href="http://www.ufrpe.br/" target="blank">UFRPE</a> |
-        <a href="http://www.ppgia.ufrpe.br/" target="blank">PPGIA</a> |
-        <a href="http://www.dc.ufrpe.br/" target="blank">DC</a>
-        <br>
-        <hr>
-        <div class="footer-manu">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/people">People</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Publications</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/blog">Blog</a></li>
-          </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="http://www.ufrpe.br/" target="blank">
+                    <img src="/img/footer/ufrpe.jpg" height="100px">
+                </a>
+                <a href="http://www.lis-lab.fr/" target="blank">
+                    <img src="/img/footer/cropped-logo_LIS_color-2.png" height="100px">
+                </a>
+                <a href="http://assistive.cin.ufpe.br/" target="blank">
+                    <img src="/img/footer/logo-assistive.png" height="100px">
+                </a>
+                <br>
+                <a href="http://www.ufrpe.br/" target="blank">UFRPE</a> |
+                <a href="http://www.ppgia.ufrpe.br/" target="blank">PPGIA</a> |
+                <a href="http://www.dc.ufrpe.br/" target="blank">DC</a> |
+                <a href="http://www.lis-lab.fr/" target="blank">LIS</a> |
+                <a href="http://assistive.cin.ufpe.br/" target="blank">ASSISTIVE</a>
+                <br>
+                <hr>
+                <div class="footer-manu">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/people">People</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <p>&copy; 2018 Text Mining Group UFRPE | Design &amp; Developed by <a href="https://rodriguesfas.com.br">RodriguesFAS</a>.</p>
+            </div>
         </div>
-        <p>&copy; 2018 Text Mining Group UFRPE | Design &amp; Developed by <a href="https://rodriguesfas.com.br">RodriguesFAS</a>.</p>
-      </div>
     </div>
-  </div>
 </footer>
 
     </body>

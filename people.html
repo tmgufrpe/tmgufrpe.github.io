@@ -4,9 +4,10 @@ title: People
 permalink: /people/
 ---
 
-
+<h1>Collaborators</h1>
 
 {% for post in site.categories.people %}
+{% if post.status == true %}
 <div class="post-area">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">
       <img src="{{ post.image }}" height="100px" alt="Member" style="border-radius: 8px;">
@@ -16,4 +17,21 @@ permalink: /people/
     {{ post.content | strip_html | truncatewords: 50 }}
   </p>
 </div>
+{% endif %}
+{% endfor %}
+
+<h1>Ex-collaborators</h1>
+
+{% for post in site.categories.people %}
+{% if post.status == false %}
+<div class="post-area">
+  <a href="{{ post.url | prepend: site.baseurl }}" class="bold">
+      <img src="{{ post.image }}" height="100px" alt="Member" style="border-radius: 8px;">
+    {{ post.title }}
+  </a>
+  <p>
+    {{ post.content | strip_html | truncatewords: 50 }}
+  </p>
+</div>
+{% endif %}
 {% endfor %}

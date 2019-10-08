@@ -8,6 +8,7 @@ date: 2018-12-21 17:16:27
 author: Text Mining Group UFRPE
 email: rjlima01@gmail.com 
 cvlattes: http://lattes.cnpq.br/7645118086647340
+status: true
 ---
 
 <b>Short Bio</b><br/>

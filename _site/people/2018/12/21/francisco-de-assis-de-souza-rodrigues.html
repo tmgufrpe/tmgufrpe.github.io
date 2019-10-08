@@ -22,7 +22,9 @@
 
 <!-- Js -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+</script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/owl.carousel.min.js"></script>
 <script src="/js/plugins.js"></script>
@@ -32,7 +34,32 @@
 <script src="/js/main.js"></script>
 
 
-<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+<script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+        var e, t = document.createElement("style");
+        return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+    };
+    supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+</script>
+
+<link rel="stylesheet" href="/js/tagcanvas/tagcanvas.min.js" />
+<script type="text/javascript">
+    window.onload = function() {
+        try {
+            TagCanvas.Start('myCanvas', 'tags', {
+                textColour: '#ff0000',
+                outlineColour: '#ff00ff',
+                reverse: true,
+                depth: 0.8,
+                maxSpeed: 0.05
+            });
+        } catch (e) {
+            // something went wrong, hide the canvas container
+            document.getElementById('myCanvasContainer').style.display = 'none';
+        }
+    };
+</script>
 
   </head>
   <body>
@@ -69,7 +96,6 @@
                 <li><a href="#parterns">Research Partners</a></li>
                 <li><a href="/publications">Publications</a></li>
                 <li><a href="/contact">Contact</a></li>
-                <li><a href="/blog">Blog</a></li>
                 <!--li><a href="/work">Work</a></li -->
               </ul>
             </div><!-- /.navbar-collapse -->
@@ -114,7 +140,7 @@
             <hr />
 
             <p><p><b>Short Bio</b><br />
-Master of Science in Computer Science - UFPE CIn (2017), Graduate in Systems Analysis and Development - UniLeão (2015), Graduate in Technology in Industrial Automation IFCE - Federal Institute of Ceará Campus Juazeiro do Norte (2017 - Teaching Higher Education IDJ - Don José Institute (2016). Founder and editor of the Geeks Club website, Team Enactus Alumni Leo Sampaio, Member of the Crash Robots IFCE team. Has experience in the area of Computer Science, Assistive Technology, Visible Device for Visually Impaired employees in the DAVI Project, Creation of Digital Games, Automation and Robotics Projects with Open Arduino Hardware, Android App Development, Desktop Systems, Web Systems, Website , Embedded Systems, Computational View, and Text Mining. (Text informed by the author)
+Master of Science in Computer Science - UFPE CIn (2019), Graduate in Systems Analysis and Development - UniLeão (2015), Graduate in Technology in Industrial Automation IFCE - Federal Institute of Ceará Campus Juazeiro do Norte (2017 - Teaching Higher Education IDJ - Don José Institute (2016). Founder and editor of the Geeks Club website, Team Enactus Alumni Leo Sampaio, Member of the Crash Robots IFCE team. Has experience in the area of Computer Science, Assistive Technology, Visible Device for Visually Impaired employees in the DAVI Project, Creation of Digital Games, Automation and Robotics Projects with Open Arduino Hardware, Android App Development, Desktop Systems, Web Systems, Website , Embedded Systems, Computational View, and Text Mining. (Text informed by the author)
 <br /><br /></p>
 
 <p>Website personal: <a href="https://rodriguesfas.com.br" target="blank">https://rodriguesfas.com.br</a></p>
@@ -140,32 +166,40 @@ Master of Science in Computer Science - UFPE CIn (2017), Graduate in Systems Ana
 
     <!-- footer Start -->
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <a href="http://www.ufrpe.br/" target="blank">
-          <img src="/img/footer/ufrpe.jpg" height="100px">
-        </a>
-        <br>
-        <a href="http://www.ufrpe.br/" target="blank">UFRPE</a> |
-        <a href="http://www.ppgia.ufrpe.br/" target="blank">PPGIA</a> |
-        <a href="http://www.dc.ufrpe.br/" target="blank">DC</a>
-        <br>
-        <hr>
-        <div class="footer-manu">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/people">People</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Publications</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/blog">Blog</a></li>
-          </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="http://www.ufrpe.br/" target="blank">
+                    <img src="/img/footer/ufrpe.jpg" height="100px">
+                </a>
+                <a href="http://www.lis-lab.fr/" target="blank">
+                    <img src="/img/footer/cropped-logo_LIS_color-2.png" height="100px">
+                </a>
+                <a href="http://assistive.cin.ufpe.br/" target="blank">
+                    <img src="/img/footer/logo-assistive.png" height="100px">
+                </a>
+                <br>
+                <a href="http://www.ufrpe.br/" target="blank">UFRPE</a> |
+                <a href="http://www.ppgia.ufrpe.br/" target="blank">PPGIA</a> |
+                <a href="http://www.dc.ufrpe.br/" target="blank">DC</a> |
+                <a href="http://www.lis-lab.fr/" target="blank">LIS</a> |
+                <a href="http://assistive.cin.ufpe.br/" target="blank">ASSISTIVE</a>
+                <br>
+                <hr>
+                <div class="footer-manu">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/people">People</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <p>&copy; 2018 Text Mining Group UFRPE | Design &amp; Developed by <a href="https://rodriguesfas.com.br">RodriguesFAS</a>.</p>
+            </div>
         </div>
-        <p>&copy; 2018 Text Mining Group UFRPE | Design &amp; Developed by <a href="https://rodriguesfas.com.br">RodriguesFAS</a>.</p>
-      </div>
     </div>
-  </div>
 </footer>
 
     </body>

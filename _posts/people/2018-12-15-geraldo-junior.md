@@ -8,6 +8,7 @@ date: 2018-12-15 17:16:27
 author: Text Mining Group UFRPE
 email: geraldoj8@gmail.com
 cvlattes: 
+status: false
 ---
 
 <b>Short Bio</b><br/>

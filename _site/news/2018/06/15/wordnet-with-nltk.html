@@ -22,7 +22,9 @@
 
 <!-- Js -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+</script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/owl.carousel.min.js"></script>
 <script src="/js/plugins.js"></script>
@@ -32,7 +34,32 @@
 <script src="/js/main.js"></script>
 
 
-<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+<script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+        var e, t = document.createElement("style");
+        return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+    };
+    supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+</script>
+
+<link rel="stylesheet" href="/js/tagcanvas/tagcanvas.min.js" />
+<script type="text/javascript">
+    window.onload = function() {
+        try {
+            TagCanvas.Start('myCanvas', 'tags', {
+                textColour: '#ff0000',
+                outlineColour: '#ff00ff',
+                reverse: true,
+                depth: 0.8,
+                maxSpeed: 0.05
+            });
+        } catch (e) {
+            // something went wrong, hide the canvas container
+            document.getElementById('myCanvasContainer').style.display = 'none';
+        }
+    };
+</script>
 
   </head>
   <body>
@@ -69,7 +96,6 @@
                 <li><a href="#parterns">Research Partners</a></li>
                 <li><a href="/publications">Publications</a></li>
                 <li><a href="/contact">Contact</a></li>
-                <li><a href="/blog">Blog</a></li>
                 <!--li><a href="/work">Work</a></li -->
               </ul>
             </div><!-- /.navbar-collapse -->
@@ -111,14 +137,14 @@
 
 <p>Let’s look at an example.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># first you import wordnet.</span>
-<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">wordnet</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># first you import wordnet.
+</span><span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">wordnet</span>
 
-<span class="c"># we use a term "program" to find synsets.</span>
-<span class="n">syns</span> <span class="o">=</span> <span class="n">wordnet</span><span class="o">.</span><span class="n">synsets</span><span class="p">(</span><span class="s">"program"</span><span class="p">)</span>
+<span class="c1"># we use a term "program" to find synsets.
+</span><span class="n">syns</span> <span class="o">=</span> <span class="n">wordnet</span><span class="o">.</span><span class="n">synsets</span><span class="p">(</span><span class="s">"program"</span><span class="p">)</span>
 
-<span class="c"># examples of outputs.</span>
-<span class="k">print</span><span class="p">(</span><span class="n">syns</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">())</span>
+<span class="c1"># examples of outputs.
+</span><span class="k">print</span><span class="p">(</span><span class="n">syns</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">())</span>
 <span class="k">print</span><span class="p">(</span><span class="n">syns</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">lemmas</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">())</span>
 <span class="k">print</span><span class="p">(</span><span class="n">syns</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">definition</span><span class="p">())</span>
 <span class="k">print</span><span class="p">(</span><span class="n">syns</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">examples</span><span class="p">())</span>
@@ -156,7 +182,7 @@
 
 <p>Output generated from the code above “example”.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plan</span><span class="o">.</span><span class="n">n</span><span class="o">.</span><span class="mo">01</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plan</span><span class="o">.</span><span class="n">n</span><span class="mf">.01</span>
 <span class="n">plan</span>
 <span class="n">a</span> <span class="n">series</span> <span class="n">of</span> <span class="n">steps</span> <span class="n">to</span> <span class="n">be</span> <span class="n">carried</span> <span class="n">out</span> <span class="ow">or</span> <span class="n">goals</span> <span class="n">to</span> <span class="n">be</span> <span class="n">accomplished</span>
 <span class="p">[</span><span class="s">'they drew up a six-step plan'</span><span class="p">,</span> <span class="s">'they discussed plans for a new bond issue'</span><span class="p">]</span>
@@ -188,32 +214,40 @@
 
     <!-- footer Start -->
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <a href="http://www.ufrpe.br/" target="blank">
-          <img src="/img/footer/ufrpe.jpg" height="100px">
-        </a>
-        <br>
-        <a href="http://www.ufrpe.br/" target="blank">UFRPE</a> |
-        <a href="http://www.ppgia.ufrpe.br/" target="blank">PPGIA</a> |
-        <a href="http://www.dc.ufrpe.br/" target="blank">DC</a>
-        <br>
-        <hr>
-        <div class="footer-manu">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/people">People</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Publications</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/blog">Blog</a></li>
-          </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="http://www.ufrpe.br/" target="blank">
+                    <img src="/img/footer/ufrpe.jpg" height="100px">
+                </a>
+                <a href="http://www.lis-lab.fr/" target="blank">
+                    <img src="/img/footer/cropped-logo_LIS_color-2.png" height="100px">
+                </a>
+                <a href="http://assistive.cin.ufpe.br/" target="blank">
+                    <img src="/img/footer/logo-assistive.png" height="100px">
+                </a>
+                <br>
+                <a href="http://www.ufrpe.br/" target="blank">UFRPE</a> |
+                <a href="http://www.ppgia.ufrpe.br/" target="blank">PPGIA</a> |
+                <a href="http://www.dc.ufrpe.br/" target="blank">DC</a> |
+                <a href="http://www.lis-lab.fr/" target="blank">LIS</a> |
+                <a href="http://assistive.cin.ufpe.br/" target="blank">ASSISTIVE</a>
+                <br>
+                <hr>
+                <div class="footer-manu">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/people">People</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <p>&copy; 2018 Text Mining Group UFRPE | Design &amp; Developed by <a href="https://rodriguesfas.com.br">RodriguesFAS</a>.</p>
+            </div>
         </div>
-        <p>&copy; 2018 Text Mining Group UFRPE | Design &amp; Developed by <a href="https://rodriguesfas.com.br">RodriguesFAS</a>.</p>
-      </div>
     </div>
-  </div>
 </footer>
 
     </body>
