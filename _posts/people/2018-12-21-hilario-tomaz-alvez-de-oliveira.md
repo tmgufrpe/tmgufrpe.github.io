@@ -2,7 +2,7 @@
 layout: post
 categories: people
 name: Hilário Tomaz Alves de Oliveira
-image: /img/people/vanilson.jpg
+image: /img/people/hilario.gif
 subtitle: 
 date: 2018-12-21 17:16:24
 author: Text Mining Group UFRPE
