@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: people
-name: Roberto Márcio Mota de Lima
+name: Roberto Lima
 image: /img/people/roberto.jpg
 subtitle: 
 date: 2018-12-16 17:16:27

@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: people
-name: Geraldo Junior
+name: Geraldo Junior (Collaborator)
 image: /img/people/profile.png
 subtitle: 
 date: 2018-12-15 17:16:27

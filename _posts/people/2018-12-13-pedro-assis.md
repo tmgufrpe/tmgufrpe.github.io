@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: people
-name: Pedro Assis
+name: Pedro Assis (Collaborator)
 image: /img/people/pedro.jpg
 subtitle: 
 date: 2018-12-13 17:16:18

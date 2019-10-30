@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: people
-name: Rinaldo José de Lima
+name: Dr. Rinaldo Lima (Assistente Professor) 
 image: /img/people/rinaldo.gif
 subtitle: 
 date: 2018-12-21 17:16:27

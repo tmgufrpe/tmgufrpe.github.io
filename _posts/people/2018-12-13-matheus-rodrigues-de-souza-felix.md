@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: people
-name: Matheus Rodrigues de Souza Félix
+name: Matheus Félix (Collaborator)
 image: /img/people/matheus.gif
 subtitle: 
 date: 2018-12-13 17:16:20

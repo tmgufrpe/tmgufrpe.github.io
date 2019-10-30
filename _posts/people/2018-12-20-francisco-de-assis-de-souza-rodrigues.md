@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: people
-title: Francisco de Assis de Souza Rodrigues
+title: Msc. Francisco Rodrigues (Collaborator)
 image: /img/people/rodriguesfas.jpg
 subtitle: 
 date: 2018-12-21 17:16:00

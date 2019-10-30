@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: people
-name: Larissa Feliciana da Silva Britto
+name: Larissa Britto
 image: /img/people/larissa.gif
 subtitle: 
 date: 2018-12-17 17:16:27

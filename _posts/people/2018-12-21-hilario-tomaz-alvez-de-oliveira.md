@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: people
-name: Hilário Tomaz Alves de Oliveira
+name: Dr. Hilário Oliveira (Collaborator)
 image: /img/people/hilario.gif
 subtitle: 
 date: 2018-12-21 17:16:24

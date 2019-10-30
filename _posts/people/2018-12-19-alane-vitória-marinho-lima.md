@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: people
-name: Alane Vitória Marinho Lima 
+name: Msc. Candidate Alane Lima (Collaborator)
 image: /img/people/alane.jpeg
 subtitle: 
 date: 2018-12-19 17:16:27

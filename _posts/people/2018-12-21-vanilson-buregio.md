@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: people
-name: Hilário Tomaz Alves de Oliveira
+name: Dr. Vanilson Burégio (Assistente Professor) 
 image: /img/people/vanilson.jpg
 subtitle: 
 date: 2018-12-21 17:16:27
