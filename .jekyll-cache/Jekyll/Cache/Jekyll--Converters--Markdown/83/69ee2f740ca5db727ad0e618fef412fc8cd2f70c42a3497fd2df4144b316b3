@@ -1,0 +1,62 @@
+I"�$<p>You can use WordNet together with NLTK to identify the meanings of words, synonyms, antonyms, and more.</p>
+
+<p>Let’s look at an example.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># first you import wordnet.
+</span><span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">wordnet</span>
+
+<span class="c1"># we use a term "program" to find synsets.
+</span><span class="n">syns</span> <span class="o">=</span> <span class="n">wordnet</span><span class="o">.</span><span class="n">synsets</span><span class="p">(</span><span class="s">"program"</span><span class="p">)</span>
+
+<span class="c1"># examples of outputs.
+</span><span class="k">print</span><span class="p">(</span><span class="n">syns</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">syns</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">lemmas</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">syns</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">definition</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">syns</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">examples</span><span class="p">())</span>
+</code></pre></div></div>
+
+<p>here you can distinguish synonym and antonym .. the lemmas will be synonymous, and then you can use antonym to find the antonyms for the lemmas. As such, you can fill in some lists like:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">synonyms</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">antonyms</span> <span class="o">=</span> <span class="p">[]</span>
+ 
+<span class="k">for</span> <span class="n">syn</span> <span class="ow">in</span> <span class="n">wordnet</span><span class="o">.</span><span class="n">synsets</span><span class="p">(</span><span class="s">"good"</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">syn</span><span class="o">.</span><span class="n">lemmas</span><span class="p">():</span>
+        <span class="n">synonyms</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">l</span><span class="o">.</span><span class="n">name</span><span class="p">())</span>
+        <span class="k">if</span> <span class="n">l</span><span class="o">.</span><span class="n">antonyms</span><span class="p">():</span>
+            <span class="n">antonyms</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">l</span><span class="o">.</span><span class="n">antonyms</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">())</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">synonyms</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">antonyms</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>Comparing the noun “ship” and “boat”.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">w1</span> <span class="o">=</span> <span class="n">wordnet</span><span class="o">.</span><span class="n">synset</span><span class="p">(</span><span class="s">'ship.n.01'</span><span class="p">)</span>
+<span class="n">w2</span> <span class="o">=</span> <span class="n">wordnet</span><span class="o">.</span><span class="n">synset</span><span class="p">(</span><span class="s">'boat.n.01'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">w1</span><span class="o">.</span><span class="n">wup_similarity</span><span class="p">(</span><span class="n">w2</span><span class="p">))</span>
+
+<span class="n">w1</span> <span class="o">=</span> <span class="n">wordnet</span><span class="o">.</span><span class="n">synset</span><span class="p">(</span><span class="s">'ship.n.01'</span><span class="p">)</span>
+<span class="n">w2</span> <span class="o">=</span> <span class="n">wordnet</span><span class="o">.</span><span class="n">synset</span><span class="p">(</span><span class="s">'car.n.01'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">w1</span><span class="o">.</span><span class="n">wup_similarity</span><span class="p">(</span><span class="n">w2</span><span class="p">))</span>
+
+<span class="n">w1</span> <span class="o">=</span> <span class="n">wordnet</span><span class="o">.</span><span class="n">synset</span><span class="p">(</span><span class="s">'ship.n.01'</span><span class="p">)</span>
+<span class="n">w2</span> <span class="o">=</span> <span class="n">wordnet</span><span class="o">.</span><span class="n">synset</span><span class="p">(</span><span class="s">'cat.n.01'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">w1</span><span class="o">.</span><span class="n">wup_similarity</span><span class="p">(</span><span class="n">w2</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>Output generated from the code above “example”.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plan</span><span class="o">.</span><span class="n">n</span><span class="mf">.01</span>
+<span class="n">plan</span>
+<span class="n">a</span> <span class="n">series</span> <span class="n">of</span> <span class="n">steps</span> <span class="n">to</span> <span class="n">be</span> <span class="n">carried</span> <span class="n">out</span> <span class="ow">or</span> <span class="n">goals</span> <span class="n">to</span> <span class="n">be</span> <span class="n">accomplished</span>
+<span class="p">[</span><span class="s">'they drew up a six-step plan'</span><span class="p">,</span> <span class="s">'they discussed plans for a new bond issue'</span><span class="p">]</span>
+<span class="p">{</span><span class="s">'upright'</span><span class="p">,</span> <span class="s">'soundly'</span><span class="p">,</span> <span class="s">'proficient'</span><span class="p">,</span> <span class="s">'skillful'</span><span class="p">,</span> <span class="s">'respectable'</span><span class="p">,</span> <span class="s">'full'</span><span class="p">,</span> <span class="s">'in_effect'</span><span class="p">,</span> <span class="s">'dependable'</span><span class="p">,</span> <span class="s">'thoroughly'</span><span class="p">,</span> <span class="s">'sound'</span><span class="p">,</span> <span class="s">'estimable'</span><span class="p">,</span> <span class="s">'secure'</span><span class="p">,</span> <span class="s">'honest'</span><span class="p">,</span> <span class="s">'well'</span><span class="p">,</span> <span class="s">'adept'</span><span class="p">,</span> <span class="s">'goodness'</span><span class="p">,</span> <span class="s">'unspoiled'</span><span class="p">,</span> <span class="s">'near'</span><span class="p">,</span> <span class="s">'commodity'</span><span class="p">,</span> <span class="s">'salutary'</span><span class="p">,</span> <span class="s">'expert'</span><span class="p">,</span> <span class="s">'undecomposed'</span><span class="p">,</span> <span class="s">'dear'</span><span class="p">,</span> <span class="s">'serious'</span><span class="p">,</span> <span class="s">'good'</span><span class="p">,</span> <span class="s">'right'</span><span class="p">,</span> <span class="s">'skilful'</span><span class="p">,</span> <span class="s">'safe'</span><span class="p">,</span> <span class="s">'trade_good'</span><span class="p">,</span> <span class="s">'effective'</span><span class="p">,</span> <span class="s">'beneficial'</span><span class="p">,</span> <span class="s">'unspoilt'</span><span class="p">,</span> <span class="s">'just'</span><span class="p">,</span> <span class="s">'in_force'</span><span class="p">,</span> <span class="s">'honorable'</span><span class="p">,</span> <span class="s">'ripe'</span><span class="p">,</span> <span class="s">'practiced'</span><span class="p">}</span>
+<span class="p">{</span><span class="s">'bad'</span><span class="p">,</span> <span class="s">'evilness'</span><span class="p">,</span> <span class="s">'badness'</span><span class="p">,</span> <span class="s">'evil'</span><span class="p">,</span> <span class="s">'ill'</span><span class="p">}</span>
+<span class="mf">0.9090909090909091</span>
+<span class="mf">0.6956521739130435</span>
+<span class="mf">0.32</span>
+</code></pre></div></div>
+
+<p>Fonte: <a href="https://pythonprogramming.net/wordnet-nltk-tutorial/">PythonProgramming</a></p>
+:ET
