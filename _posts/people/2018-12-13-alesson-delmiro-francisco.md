@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: people
-name: Alesson Delmiro Francisco
+name: Alesson Francisco
 image: /img/people/alesson.jpg
 subtitle: 
 date: 2018-12-13 17:16:27

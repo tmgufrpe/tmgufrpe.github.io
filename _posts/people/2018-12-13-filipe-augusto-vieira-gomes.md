@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: people
-name: Filipe Augusto Vieira Gomes
+name: Msc. Filipe Gomes
 image: /img/people/filipe.jpeg
 subtitle: 
 date: 2018-12-13 17:16:27
