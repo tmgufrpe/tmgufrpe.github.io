@@ -16,8 +16,8 @@ permalink: /publications/
 <div class="post-area">
   <a href="#" class="bold">{{ journal.title }}</a>
   <p>
-    <b>Author:</b> {{ journal.authors }} <br>
-    <b>Publications:</b> {{ journal.publications | strip_html | truncatewords: 50 }}
+    Author: {{ journal.authors }} <br>
+    Publications: {{ journal.publications | strip_html | truncatewords: 50 }}
   </p>
 </div>
 {% endfor %}
