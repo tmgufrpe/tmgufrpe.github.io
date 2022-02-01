@@ -1,14 +1,14 @@
 ---
 layout: post
 categories: people
-name: Pedro Assis (Collaborator)
+name: Pedro Assis
 image: /img/people/pedro.jpg
 subtitle: 
-date: 2018-12-13 17:16:18
+date: 2018-12-11 17:16:18
 author: Text Mining Group UFRPE
 email: pedrojudo74@hotmail.com
 cvlattes: 
-status: true
+active: true
 ---
 
 <b>Short Bio</b><br/>

@@ -4,11 +4,11 @@ categories: people
 name: Larissa Britto
 image: /img/people/larissa.gif
 subtitle: 
-date: 2018-12-17 17:16:27
+date: 2018-12-8 17:16:27
 author: Text Mining Group UFRPE
 email: larissafelicianasilva@gmail.com 
 cvlattes: http://lattes.cnpq.br/5058497100007411
-status: false
+active: false
 ---
 
 <b>Short Bio</b><br/>

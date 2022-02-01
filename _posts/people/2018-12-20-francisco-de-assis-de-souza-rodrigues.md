@@ -1,14 +1,14 @@
 ---
 layout: post
 categories: people
-title: Msc. Francisco Rodrigues (Collaborator)
+name: Msc. Francisco Rodrigues
 image: /img/people/rodriguesfas.jpg
 subtitle: 
-date: 2018-12-21 17:16:00
+date: 2018-12-5 17:16:00
 author: Text Mining Group UFRPE
 email: franciscosouzaacer@gmail.com
 cvlattes: http://lattes.cnpq.br/0017254712870479
-status: true
+active: true
 ---
 
 <b>Short Bio</b><br/>

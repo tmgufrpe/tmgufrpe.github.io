@@ -4,11 +4,11 @@ categories: people
 name: Dr. Rinaldo Lima (Assistente Professor) 
 image: /img/people/rinaldo.gif
 subtitle: 
-date: 2018-12-21 17:16:27
+date: 2018-12-1 17:16:27
 author: Text Mining Group UFRPE
 email: rjlima01@gmail.com 
 cvlattes: http://lattes.cnpq.br/7645118086647340
-status: true
+active: true
 ---
 
 <b>Short Bio</b><br/>

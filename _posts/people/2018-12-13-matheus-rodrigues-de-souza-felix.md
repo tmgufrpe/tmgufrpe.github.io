@@ -1,14 +1,14 @@
 ---
 layout: post
 categories: people
-name: Matheus Félix (Collaborator)
+name: Matheus Félix
 image: /img/people/matheus.gif
 subtitle: 
-date: 2018-12-13 17:16:20
+date: 2018-12-12 17:16:20
 author: Text Mining Group UFRPE
 email: matheus.souza@ufrpe.br
 cvlattes: http://lattes.cnpq.br/6209976572558281
-status: true
+active: true
 ---
 
 <b>Short Bio</b><br/>

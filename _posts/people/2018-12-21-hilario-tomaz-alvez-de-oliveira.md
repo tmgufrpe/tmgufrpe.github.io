@@ -1,14 +1,14 @@
 ---
 layout: post
 categories: people
-name: Dr. Hilário Oliveira (Collaborator)
+name: Dr. Hilário Oliveira
 image: /img/people/hilario.gif
 subtitle: 
-date: 2018-12-21 17:16:24
+date: 2018-12-3 17:16:24
 author: Text Mining Group UFRPE
 email: 
 cvlattes: http://lattes.cnpq.br/8980213630090119
-status: true
+active: true
 ---
 
 Prof. Colaborador da equipe. <br>

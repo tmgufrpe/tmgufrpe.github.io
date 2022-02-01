@@ -1,14 +1,14 @@
 ---
 layout: post
 categories: people
-name: Alesson Francisco (Collaborator)
+name: Alesson Delmiro Francisco
 image: /img/people/alesson.jpg
 subtitle: 
-date: 2018-12-13 17:16:27
+date: 2018-12-14 17:16:27
 author: Text Mining Group UFRPE
 email: 
 cvlattes: 
-status: true
+active: true
 ---
 
 <b>Short Bio</b><br/>

@@ -1,14 +1,14 @@
 ---
 layout: post
 categories: people
-name: Geraldo Junior (Collaborator)
+name: Geraldo Junior
 image: /img/people/profile.png
 subtitle: 
-date: 2018-12-15 17:16:27
+date: 2018-12-10 17:16:27
 author: Text Mining Group UFRPE
 email: geraldoj8@gmail.com
 cvlattes: 
-status: false
+active: false
 ---
 
 <b>Short Bio</b><br/>

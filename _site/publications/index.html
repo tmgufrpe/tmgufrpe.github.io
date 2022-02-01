@@ -7,7 +7,7 @@
 <title>Publications</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="icon" type="image/x-icon" href="/img/logo.png">
 
 <!-- CSS -->
 <link rel="stylesheet" href="/css/owl.carousel.css" />
@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="/css/syntax.css" />
 
 <!-- Js -->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
@@ -64,254 +65,231 @@
   </head>
   <body>
 
-    <!-- Header Start -->
+    
 <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- header Nav Start -->
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-                        <a class="navbar-brand" href="/">
-                            <img src="/img/logo.jpg" height="70px" alt="UFRPE" title="">
-                        </a>
-                        <font size=5><b>Text Mining Group UFRPE</b></font>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/people">People</a></li>
-                                <li>
-                                    <a href="#projects">Projects</a>
-                                </li>
-                                <li><a href="#parterns">Research Partners</a></li>
-                                <li><a href="/publications">Publications</a></li>
-                                <li><a href="/contact">Contact</a></li>
-                                <!--li><a href="/work">Work</a></li -->
-                            </ul>
-                        </div>
-                        <!-- /.navbar-collapse -->
-                    </div>
-                    <!-- /.container-fluid -->
-                </nav>
-            </div>
+    <div class="nav">
+        <a href="/">
+            <img src="/img/logo.png" alt="UFRPE" title="" height="80px">
+        </a>
+        <span class="nav-title">Text Mining Group UFRPE</span>
+        <div class="spacer"></div>
+        <div>
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/publications">Publications</a>
+            <a class="nav-link" href="/people">People</a>
+            <a class="nav-link" href="/contact">Contact</a>
         </div>
     </div>
 </header>
-<!-- header close -->
 
 
-    <div class="post-area">
-  <p class="bold">
+
+    <div class="element-container">
+
+  <div class="post-area">
+    <p class="bold">
     <h1> [ Journals ] </h1>
-  </p>
-</div>
+    </p>
+  </div>
 
 
 
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">A Logic-based Relational Learning Approach to Relation Extraction.</a>
+    <p>
+      Author: Lima, R.; Espinasse, B.; Freitas, F. <br>
+      Publications: Engineering Applications of Artificial Intelligence (EAAI, 2018) (accepted).
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Automatic Cohesive Summarization with Pronominal Anaphora Resolution.</a>
+    <p>
+      Author: Antunes, J.; Lins, R. D.; Lima, R.; Oliveira, H.; Riss, M.; Simske, S. J. <br>
+      Publications: Computer Speech and Language (CSL) Journal, v. 52, p. 141-164, 2018.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">OntoILPER an ontology- and inductive logic programming-based system to extract entities and relations from text.</a>
+    <p>
+      Author: Lima, R.; Espinasse, B.; Freitas, F. <br>
+      Publications: Knowledge and Information Systems, v. 54, p. 1-33, Springer-Verlag, 2017.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Extraction automatique d’entités et de relations par ontologies et programmation logique inductive.</a>
+    <p>
+      Author: Espinasse, B., Lima, R., Freitas, F. <br>
+      Publications: Revue d'Intelligence Artificielle (RIA), Vol. 30 (n° 6/2016), Vol 30/6 - pp.637-674, 2016.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Assessing shallow sentence scoring techniques and combinations for single and multi-document summarization.</a>
+    <p>
+      Author: Oliveira, h., Ferreira, R., Lima, R., Lins, R., Freitas, Fred, Riss, M., Simske, S. <br>
+      Publications: Expert Systems with Applications, V.65, p.68-86, 2016.
+    </p>
+  </div>
+  
 
-<div class="post-area">
-  <a href="#" class="bold">A Logic-based Relational Learning Approach to Relation Extraction.</a>
-  <p>
-    <b>Author:</b> Lima, R.; Espinasse, B.; Freitas, F. <br>
-    <b>Publications:</b> Engineering Applications of Artificial Intelligence (EAAI, 2018) (accepted).
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">Automatic Cohesive Summarization with Pronominal Anaphora Resolution.</a>
-  <p>
-    <b>Author:</b> Antunes, J.; Lins, R. D.; Lima, R.; Oliveira, H.; Riss, M.; Simske, S. J. <br>
-    <b>Publications:</b> Computer Speech and Language (CSL) Journal, v. 52, p. 141-164, 2018.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">OntoILPER an ontology- and inductive logic programming-based system to extract entities and relations from text.</a>
-  <p>
-    <b>Author:</b> Lima, R.; Espinasse, B.; Freitas, F. <br>
-    <b>Publications:</b> Knowledge and Information Systems, v. 54, p. 1-33, Springer-Verlag, 2017.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">Extraction automatique d’entités et de relations par ontologies et programmation logique inductive.</a>
-  <p>
-    <b>Author:</b> Espinasse, B., Lima, R., Freitas, F. <br>
-    <b>Publications:</b> Revue d'Intelligence Artificielle (RIA), Vol. 30 (n° 6/2016), Vol 30/6 - pp.637-674, 2016.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">Assessing shallow sentence scoring techniques and combinations for single and multi-document summarization.</a>
-  <p>
-    <b>Author:</b> Oliveira, h., Ferreira, R., Lima, R., Lins, R., Freitas, Fred, Riss, M., Simske, S. <br>
-    <b>Publications:</b> Expert Systems with Applications, V.65, p.68-86, 2016.
-  </p>
-</div>
 
 
-
-
-<div class="post-area">
-  <p class="bold">
+  <div class="post-area">
+    <p class="bold">
     <h1> [ Full Papers ] </h1>
-  </p>
-</div>
+    </p>
+  </div>
 
 
 
 
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">A Concept-based ILP Approach for Multi-document Summarization Exploring Centrality and Position.</a>
+    <p>
+      <b>Author:</b> Oliveira, H..; Lins, R. D.; Lima, R.; Freitas, F.; Simske, S. <br>
+      <b>Publications:</b> In Brazilian Conference on Intelligent Systems (BRACIS), 2018, São Paulo. 7th Brazilian Conference on Intelligent Systems (BRACIS), 2018.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Towards a Reference Architecture for Augmentative and Alternative Communication Systems.</a>
+    <p>
+      <b>Author:</b> Franco, N., Silva, E., Lima, R., Fidalgo, R. <br>
+      <b>Publications:</b> Proceedings of the Brazilian Symposium on Computers in Education (SBIE), 2018, pp. 1073.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Towards Coherent Single-Document Summarization An Integer Linear Programming-based Approach.</a>
+    <p>
+      <b>Author:</b> Rodrigo, G., Lima, R., Espinasse, B., Oliveira, H. <br>
+      <b>Publications:</b> In Proc. of the 33rd ACM/SIGAPP Symposium On Applied Computing (SAC), Pau, France, April 9-13, 2018.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">aBoard Uma Plataforma para Educação Inclusiva a partir de Comunicação Aumentativa e/ou Alternativa.</a>
+    <p>
+      <b>Author:</b> Franco, N. M.; Lima, T. P. ; Lima, A. L., Edson A.; Lima, R., Cavalcante, T. C. F., Robson N. F. <br>
+      <b>Publications:</b> In XXVIII  Simpósio Brasileiro de Informática na Educação, 2017, Recife. Anais do 28º Simpósio Brasileiro de Informática na Educação (SBIE 2017), 2017.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">A Recall Analysis of Core Word Lists over Children's Utterances for Augmentative and Alternative Communication.</a>
+    <p>
+      <b>Author:</b> Franco, N. M., Lima, A. L., Lima, T. P., Silva, E. A., Lima, R.; Fidalgo, R. N. <br>
+      <b>Publications:</b> In 2017 IEEE 30th International Symposium on Computer-Based Medical Systems (CBMS), 2017, Thessaloniki. p. 278-283
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">A Regression-based Approach using Integer Linear Programming for Single-document Summarization.</a>
+    <p>
+      <b>Author:</b> Oliveira, H., Lins, R., Lima, R., Freitas, F., Simske, S. J. <br>
+      <b>Publications:</b> In 29th IEEE International Conference on Tools with Artificial Intelligence, 2017, Boston, 2017.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Método Supervisionado para Categorização Automática de Lançamentos Financeiros.</a>
+    <p>
+      <b>Author:</b> Monteiro, C. V.; Delgado, A. J.; Lima, R.; Soares, E. <br>
+      <b>Publications:</b> In XIV Encontro Nacional de Inteligência Artificial e Computacional (ENIAC), 2017, Uberlância, 2017.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">A Concept-based Integer Linear Programming Approach for Single-Document Summarization.</a>
+    <p>
+      <b>Author:</b> Oliveira, H., Lima, R., Lins, R., Freitas, F., Riss, M., Simske, S. <br>
+      <b>Publications:</b> In Proc. of Brazilian Conference on Intelligent Systems (BRACIS), Recife, Brazil, 2016.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Assessing Concept Weighting in Integer Linear Programming based Single-document Summarization.</a>
+    <p>
+      <b>Author:</b> Oliveira, H., Lima, R., Lins, R., Freitas, F., Riss, M., Simske, S. <br>
+      <b>Publications:</b> In Proc. of 2016 ACM Symposium on Document Engineering - DocEng '16, 2016, Viena, Austria.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Extraction automatique d’entités et de relations par ontologies et programmation logique inductive.</a>
+    <p>
+      <b>Author:</b> Espinasse, B., Lima, Rinaldo J., Magdy, D. <br>
+      <b>Publications:</b> In Proc. of Journée Francophones sur les Ontologies (JFO), 2016, Bordeaux, France.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Automatic Summarization of News Articles in Mobile Devices.</a>
+    <p>
+      <b>Author:</b> Cabral, L., Lima, R., Lins, R., Neto, M., Ferreira, R., Simske, S., Riss, M. <br>
+      <b>Publications:</b> In Proc. of 14th Mexican International Conference on Artificial Intelligence (MICAI), 2015, Cuernavaca. 2015, p. 8-13.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Relation Extraction from Texts with Symbolic Rules Induced by Inductive Logic Programming.</a>
+    <p>
+      <b>Author:</b> Lima, R., Espinasse, B., Freitas, Fred. <br>
+      <b>Publications:</b> In Proc. of IEEE 27th International Conference on Tools with Artificial Intelligence (ICTAI), Vietri sul Mare. p.194, 2015.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Automatic Summarization of News Articles in Mobile Devices.</a>
+    <p>
+      <b>Author:</b> Cabral, L.; Lima, R.; Lins, Rafael; Neto, M.; Ferreira, R.; Simske, S.; Riss, M. <br>
+      <b>Publications:</b> In 2015 Fourteenth Mexican International Conference on Artificial Intelligence (MICAI), 2015, Cuernavaca. p. 8-13.
+    </p>
+  </div>
+  
 
-<div class="post-area">
-  <a href="#" class="bold">A Concept-based ILP Approach for Multi-document Summarization Exploring Centrality and Position.</a>
-  <p>
-    <b>Author:</b> Oliveira, H..; Lins, R. D.; Lima, R.; Freitas, F.; Simske, S. <br>
-    <b>Publications:</b> In Brazilian Conference on Intelligent Systems (BRACIS), 2018, São Paulo. 7th Brazilian Conference on Intelligent Systems (BRACIS), 2018.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">Towards a Reference Architecture for Augmentative and Alternative Communication Systems.</a>
-  <p>
-    <b>Author:</b> Franco, N., Silva, E., Lima, R., Fidalgo, R. <br>
-    <b>Publications:</b> Proceedings of the Brazilian Symposium on Computers in Education (SBIE), 2018, pp. 1073.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">Towards Coherent Single-Document Summarization An Integer Linear Programming-based Approach.</a>
-  <p>
-    <b>Author:</b> Rodrigo, G., Lima, R., Espinasse, B., Oliveira, H. <br>
-    <b>Publications:</b> In Proc. of the 33rd ACM/SIGAPP Symposium On Applied Computing (SAC), Pau, France, April 9-13, 2018.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">aBoard Uma Plataforma para Educação Inclusiva a partir de Comunicação Aumentativa e/ou Alternativa.</a>
-  <p>
-    <b>Author:</b> Franco, N. M.; Lima, T. P. ; Lima, A. L., Edson A.; Lima, R., Cavalcante, T. C. F., Robson N. F. <br>
-    <b>Publications:</b> In XXVIII  Simpósio Brasileiro de Informática na Educação, 2017, Recife. Anais do 28º Simpósio Brasileiro de Informática na Educação (SBIE 2017), 2017.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">A Recall Analysis of Core Word Lists over Children's Utterances for Augmentative and Alternative Communication.</a>
-  <p>
-    <b>Author:</b> Franco, N. M., Lima, A. L., Lima, T. P., Silva, E. A., Lima, R.; Fidalgo, R. N. <br>
-    <b>Publications:</b> In 2017 IEEE 30th International Symposium on Computer-Based Medical Systems (CBMS), 2017, Thessaloniki. p. 278-283
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">A Regression-based Approach using Integer Linear Programming for Single-document Summarization.</a>
-  <p>
-    <b>Author:</b> Oliveira, H., Lins, R., Lima, R., Freitas, F., Simske, S. J. <br>
-    <b>Publications:</b> In 29th IEEE International Conference on Tools with Artificial Intelligence, 2017, Boston, 2017.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">Método Supervisionado para Categorização Automática de Lançamentos Financeiros.</a>
-  <p>
-    <b>Author:</b> Monteiro, C. V.; Delgado, A. J.; Lima, R.; Soares, E. <br>
-    <b>Publications:</b> In XIV Encontro Nacional de Inteligência Artificial e Computacional (ENIAC), 2017, Uberlância, 2017.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">A Concept-based Integer Linear Programming Approach for Single-Document Summarization.</a>
-  <p>
-    <b>Author:</b> Oliveira, H., Lima, R., Lins, R., Freitas, F., Riss, M., Simske, S. <br>
-    <b>Publications:</b> In Proc. of Brazilian Conference on Intelligent Systems (BRACIS), Recife, Brazil, 2016.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">Assessing Concept Weighting in Integer Linear Programming based Single-document Summarization.</a>
-  <p>
-    <b>Author:</b> Oliveira, H., Lima, R., Lins, R., Freitas, F., Riss, M., Simske, S. <br>
-    <b>Publications:</b> In Proc. of 2016 ACM Symposium on Document Engineering - DocEng '16, 2016, Viena, Austria.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">Extraction automatique d’entités et de relations par ontologies et programmation logique inductive.</a>
-  <p>
-    <b>Author:</b> Espinasse, B., Lima, Rinaldo J., Magdy, D. <br>
-    <b>Publications:</b> In Proc. of Journée Francophones sur les Ontologies (JFO), 2016, Bordeaux, France.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">Automatic Summarization of News Articles in Mobile Devices.</a>
-  <p>
-    <b>Author:</b> Cabral, L., Lima, R., Lins, R., Neto, M., Ferreira, R., Simske, S., Riss, M. <br>
-    <b>Publications:</b> In Proc. of 14th Mexican International Conference on Artificial Intelligence (MICAI), 2015, Cuernavaca. 2015, p. 8-13.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">Relation Extraction from Texts with Symbolic Rules Induced by Inductive Logic Programming.</a>
-  <p>
-    <b>Author:</b> Lima, R., Espinasse, B., Freitas, Fred. <br>
-    <b>Publications:</b> In Proc. of IEEE 27th International Conference on Tools with Artificial Intelligence (ICTAI), Vietri sul Mare. p.194, 2015.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">Automatic Summarization of News Articles in Mobile Devices.</a>
-  <p>
-    <b>Author:</b> Cabral, L.; Lima, R.; Lins, Rafael; Neto, M.; Ferreira, R.; Simske, S.; Riss, M. <br>
-    <b>Publications:</b> In 2015 Fourteenth Mexican International Conference on Artificial Intelligence (MICAI), 2015, Cuernavaca. p. 8-13.
-  </p>
-</div>
 
 
-
-
-<div class="post-area">
-  <p class="bold">
+  <div class="post-area">
+    <p class="bold">
     <h1> [ Short Papers ] </h1>
-  </p>
+    </p>
+  </div>
+
+
+
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Mobile Summarizer and News Summary Navigator.</a>
+    <p>
+      <b>Author:</b> Cabral, L.; Neto, M.; Borges, A.; Lins, R.; Lima, R.; Mello, R.; Riss, M.; Simske, S. J. <br>
+      <b>Publications:</b> In the 2016 ACM Symposium, 2016, Vienna. Proceedings of the 2016 ACM Symposium on Document Engineering - DocEng '16, 2016. p. 107-110.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Multilingual News Article Summarization in Mobile Devices – Demo.</a>
+    <p>
+      <b>Author:</b> Cabral, L., Neto, Manoel, Borges, A, Lins, R., Lima, R., Simske, S., Riss, M. <br>
+      <b>Publications:</b> In the Proc. of the 2016 ACM Symposium on Document Engineering (DocEng), 2016, Viena, 2016.
+    </p>
+  </div>
+  
+  <div class="post-area">
+    <a href="#" class="paper-title">Towards Cohesive Extractive Summarization through Anaphoric Expression Resolution.</a>
+    <p>
+      <b>Author:</b> Batista, J., Lins, R., Lima, R., Simske, S., Riss, M. <br>
+      <b>Publications:</b> In the Proc. of the 2016 ACM symposium on Document engineering, (DocEng), Viena, Austria, 2016.
+    </p>
+  </div>
+  
+
 </div>
-
-
-
-
-<div class="post-area">
-  <a href="#" class="bold">Mobile Summarizer and News Summary Navigator.</a>
-  <p>
-    <b>Author:</b> Cabral, L.; Neto, M.; Borges, A.; Lins, R.; Lima, R.; Mello, R.; Riss, M.; Simske, S. J. <br>
-    <b>Publications:</b> In the 2016 ACM Symposium, 2016, Vienna. Proceedings of the 2016 ACM Symposium on Document Engineering - DocEng '16, 2016. p. 107-110.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">Multilingual News Article Summarization in Mobile Devices – Demo.</a>
-  <p>
-    <b>Author:</b> Cabral, L., Neto, Manoel, Borges, A, Lins, R., Lima, R., Simske, S., Riss, M. <br>
-    <b>Publications:</b> In the Proc. of the 2016 ACM Symposium on Document Engineering (DocEng), 2016, Viena, 2016.
-  </p>
-</div>
-
-<div class="post-area">
-  <a href="#" class="bold">Towards Cohesive Extractive Summarization through Anaphoric Expression Resolution.</a>
-  <p>
-    <b>Author:</b> Batista, J., Lins, R., Lima, R., Simske, S., Riss, M. <br>
-    <b>Publications:</b> In the Proc. of the 2016 ACM symposium on Document engineering, (DocEng), Viena, Austria, 2016.
-  </p>
-</div>
-
 
 
 

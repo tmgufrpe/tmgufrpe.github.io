@@ -4,11 +4,11 @@ categories: people
 name: Raissa Camelo
 image: /img/people/raissa.jpg
 subtitle: 
-date: 2018-12-13 17:16:27
+date: 2021-12-13 17:16:27
 author: Text Mining Group UFRPE
 email: 
 cvlattes: http://lattes.cnpq.br/6761163457130594
-status: false
+active: true
 ---
 
 <b>Short Bio</b><br/>
