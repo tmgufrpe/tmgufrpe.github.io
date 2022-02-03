@@ -7,7 +7,7 @@
 <title>Text Mining Group UFRPE</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="icon" type="image/x-icon" href="/img/logo.png">
 
 <!-- CSS -->
 <link rel="stylesheet" href="/css/owl.carousel.css" />
@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="/css/syntax.css" />
 
 <!-- Js -->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
@@ -64,72 +65,37 @@
   </head>
   <body>
 
-    <!-- Header Start -->
+    
 <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- header Nav Start -->
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-                        <a class="navbar-brand" href="/">
-                            <img src="/img/logo.jpg" height="70px" alt="UFRPE" title="">
-                        </a>
-                        <font size=5><b>Text Mining Group UFRPE</b></font>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/people">People</a></li>
-                                <li>
-                                    <a href="#projects">Projects</a>
-                                </li>
-                                <li><a href="#parterns">Research Partners</a></li>
-                                <li><a href="/publications">Publications</a></li>
-                                <li><a href="/contact">Contact</a></li>
-                                <!--li><a href="/work">Work</a></li -->
-                            </ul>
-                        </div>
-                        <!-- /.navbar-collapse -->
-                    </div>
-                    <!-- /.container-fluid -->
-                </nav>
-            </div>
+    <div class="nav">
+        <a href="/">
+            <img src="/img/logo.png" alt="UFRPE" title="" height="80px">
+        </a>
+        <span class="nav-title">Text Mining Group UFRPE</span>
+        <div class="spacer"></div>
+        <div>
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/publications">Publications</a>
+            <a class="nav-link" href="/people">People</a>
+            <a class="nav-link" href="/contact">Contact</a>
         </div>
     </div>
 </header>
-<!-- header close -->
 
 
-    <!-- Slider Start -->
-<section id="slider">
-  <div class="container">
 
-    <div class="row">
-      <div class="col-md-10 col-md-offset-2">
-        <div class="block">
-          <h1 class="animated fadeInUp"><b>Text Mining Group AT UFRPE</b></h1>
-          <p class="animated fadeInUp">
-            <h4>
-            The Text Mining Group has the main goal of conducting state-of-the-art research and development on Natural Language Processing (NLP), Text Mining, and Machine Learning applications. <br><br>
-              Our group is composed of Ph.D. researchers, graduate and undergraduate students from the Departamento de Computação/UFRPE, Recife, Brazil. <br><br>
-              In September/2018 a research collaboration agreement between our group and the Laboratoire d'Informatique et Systemes (Marseille/France) was signed which has enabled expertise exchange between them."</h4>
-          </p>
-        </div>
-      </div>
-    </div>
+    <div class="anim-container">
+  <div id="cv">
+    <script src="js/g.js"></script>
   </div>
-</section>
+  <div class="text-container">
+  <h1 class="anim-header"><b>Text Mining Group AT UFRPE</b></h1>
+  <h4 class="anim-text">The Text Mining Group has the main goal of conducting state-of-the-art research and development on Natural Language Processing (NLP), Text Mining, and Machine Learning applications. <br><br>
+    Our group is composed of Ph.D. researchers, graduate and undergraduate students from the Departamento de Computação/UFRPE, Recife, Brazil. <br><br>
+    In September/2018 a research collaboration agreement between our group and the Laboratoire d'Informatique et Systemes (Marseille/France) was signed which has enabled expertise exchange between them."</h4>
+  </div>
 
+</div>
 
 
 <!-- Wrapper Start -->
@@ -138,7 +104,7 @@
     <div class="row">
       <div class="col-md-7 col-sm-12">
         <div class="block">
-          <div class="section-title">
+          <div >
             <h2>NATURAL LANGUAGE PROCESSING</h2>
             <p>
               Natural Language Processing (NLP) is one of the most important technologies
@@ -179,7 +145,6 @@
           between our group and the Laboratoire d’Informatique et Systèmes (Marseille/France)
           was signed which has enabled expertise exchange between them.
         </p>
-        <a href="#" class="btn btn-view-works">More</a>
       </div>
     </div>
   </div>
@@ -330,51 +295,6 @@
     </div>
 
     <div class="row">
-
-      <!--div class="col-md-6">
-        
-        <div class="block">
-          
-          <ul class="counter-box clearfix">
-            <li>
-              <div class="block">
-                <i class="ion-ios-chatboxes-outline"></i>
-                <h4 class="counter">20000</h4>
-                <span>Cups of Coffee</span>
-              </div>
-            </li>
-            
-          <ul class="counter-box clearfix">
-            <li>
-              <div class="block">
-                <i class="ion-ios-glasses-outline"></i>
-                <h4 class="counter">1500</h4>
-                <span>Gallons of Soft Drink</span>
-              </div>
-            </li>
-            
-          <ul class="counter-box clearfix">
-            <li>
-              <div class="block">
-                <i class="ion-ios-compose-outline"></i>
-                <h4 class="counter">1200</h4>
-                <span>Whiteboard Markers</span>
-              </div>
-            </li>
-            
-          <ul class="counter-box clearfix">
-            <li>
-              <div class="block">
-                <i class="ion-ios-timer-outline"></i>
-                <h4 class="counter">300</h4>
-                <span>Websites built</span>
-              </div>
-            </li>
-            
-          </ul>
-        </div>
-        
-      </div-->
 
       <div class="col-md-12">
         

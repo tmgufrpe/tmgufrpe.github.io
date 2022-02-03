@@ -4,11 +4,11 @@ categories: people
 name: Dr. Vanilson Burégio (Assistente Professor) 
 image: /img/people/vanilson.jpg
 subtitle: 
-date: 2018-12-21 17:16:27
+date: 2018-12-2 17:16:27
 author: Text Mining Group UFRPE
 email: 
 cvlattes: http://lattes.cnpq.br/8980213630090119
-status: true
+active: true
 ---
 
 Prof. Colaborador da equipe. <br>

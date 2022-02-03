@@ -4,61 +4,65 @@ title: Publications
 permalink: /publications/
 ---
 
-<div class="post-area">
-  <p class="bold">
+<div class="element-container">
+
+  <div class="post-area">
+    <p class="bold">
     <h1> [ Journals ] </h1>
-  </p>
-</div>
+    </p>
+  </div>
 
 
 
-{% for journal in site.data.journals %}
-<div class="post-area">
-  <a href="#" class="bold">{{ journal.title }}</a>
-  <p>
-    Author: {{ journal.authors }} <br>
-    Publications: {{ journal.publications | strip_html | truncatewords: 50 }}
-  </p>
-</div>
-{% endfor %}
+  {% for journal in site.data.journals %}
+  <div class="post-area">
+    <a href="#" class="paper-title">{{ journal.title }}</a>
+    <p>
+      Author: {{ journal.authors }} <br>
+      Publications: {{ journal.publications | strip_html | truncatewords: 50 }}
+    </p>
+  </div>
+  {% endfor %}
 
 
 
-<div class="post-area">
-  <p class="bold">
+  <div class="post-area">
+    <p class="bold">
     <h1> [ Full Papers ] </h1>
-  </p>
-</div>
+    </p>
+  </div>
 
 
 
 
-{% for paper in site.data.papers %}
-<div class="post-area">
-  <a href="#" class="bold">{{ paper.title }}</a>
-  <p>
-    <b>Author:</b> {{ paper.authors }} <br>
-    <b>Publications:</b> {{ paper.publications | strip_html | truncatewords: 50 }}
-  </p>
-</div>
-{% endfor %}
+  {% for paper in site.data.papers %}
+  <div class="post-area">
+    <a href="#" class="paper-title">{{ paper.title }}</a>
+    <p>
+      <b>Author:</b> {{ paper.authors }} <br>
+      <b>Publications:</b> {{ paper.publications | strip_html | truncatewords: 50 }}
+    </p>
+  </div>
+  {% endfor %}
 
 
 
-<div class="post-area">
-  <p class="bold">
+  <div class="post-area">
+    <p class="bold">
     <h1> [ Short Papers ] </h1>
-  </p>
+    </p>
+  </div>
+
+
+
+  {% for shortpaper in site.data.shortpapers %}
+  <div class="post-area">
+    <a href="#" class="paper-title">{{ shortpaper.title }}</a>
+    <p>
+      <b>Author:</b> {{ shortpaper.authors }} <br>
+      <b>Publications:</b> {{ shortpaper.publications | strip_html | truncatewords: 50 }}
+    </p>
+  </div>
+  {% endfor %}
+
 </div>
-
-
-
-{% for shortpaper in site.data.shortpapers %}
-<div class="post-area">
-  <a href="#" class="bold">{{ shortpaper.title }}</a>
-  <p>
-    <b>Author:</b> {{ shortpaper.authors }} <br>
-    <b>Publications:</b> {{ shortpaper.publications | strip_html | truncatewords: 50 }}
-  </p>
-</div>
-{% endfor %}

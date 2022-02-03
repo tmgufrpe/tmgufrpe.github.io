@@ -1,14 +1,14 @@
 ---
 layout: post
 categories: people
-name: Msc. Candidate Alane Lima (Collaborator)
+name: Msc. Alane Lima
 image: /img/people/alane.jpeg
 subtitle: 
-date: 2018-12-19 17:16:27
+date: 2018-12-6 17:16:27
 author: Text Mining Group UFRPE
 email: alane.vitoria16@gmail.com 
 cvlattes: http://lattes.cnpq.br/8915298266829544
-status: true
+active: true
 ---
 
 <b>Short Bio</b><br/>
