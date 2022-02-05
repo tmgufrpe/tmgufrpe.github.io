@@ -9,6 +9,7 @@ author: Text Mining Group UFRPE
 email: rjlima01@gmail.com 
 cvlattes: http://lattes.cnpq.br/7645118086647340
 active: true
+order: 1
 ---
 
 <b>Short Bio</b><br/>

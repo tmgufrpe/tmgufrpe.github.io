@@ -7,7 +7,7 @@ permalink: /people/
 <div class="element-container">
   <h1>Collaborators</h1>
 
-  {% assign collaborators = site.categories.people | sort: 'date' %}
+  {% assign collaborators = site.categories.people | sort: 'order' %}
   {% for post in collaborators %}
   {% if post.active == true %}
   <div class="post-area">
@@ -25,7 +25,7 @@ permalink: /people/
   
   <h1>Ex-collaborators</h1>
   
-  {% assign exCollaborators = site.categories.people | sort: 'date' %}
+  {% assign exCollaborators = site.categories.people %}
   {% for post in exCollaborators %}
   {% if post.active == false %}
   <div class="post-area">

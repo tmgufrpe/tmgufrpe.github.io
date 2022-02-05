@@ -8,7 +8,7 @@ date: 2018-12-7 17:16:27
 author: Text Mining Group UFRPE
 email: saulolucas.gm@gmail.com 
 cvlattes: http://lattes.cnpq.br/4946764289657522
-active: true
+order: 6
 ---
 
 <b>Short Bio</b><br/>

@@ -9,6 +9,7 @@ author: Text Mining Group UFRPE
 email: 
 cvlattes: http://lattes.cnpq.br/8980213630090119
 active: true
+order: 2
 ---
 
 Prof. Colaborador da equipe. <br>
