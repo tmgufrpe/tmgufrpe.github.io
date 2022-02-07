@@ -8,7 +8,7 @@ date: 2018-12-11 17:16:18
 author: Text Mining Group UFRPE
 email: pedrojudo74@hotmail.com
 cvlattes: 
-active: true
+order: 7
 ---
 
 <b>Short Bio</b><br/>

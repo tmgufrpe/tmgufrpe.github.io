@@ -8,7 +8,7 @@ date: 2021-12-13 17:16:27
 author: Text Mining Group UFRPE
 email: 
 cvlattes: http://lattes.cnpq.br/6761163457130594
-active: true
+order: 11
 ---
 
 <b>Short Bio</b><br/>

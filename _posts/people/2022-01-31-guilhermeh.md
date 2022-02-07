@@ -9,6 +9,7 @@ author: Text Mining Group UFRPE
 email: guihss.cs@gmail.com
 cvlattes: http://lattes.cnpq.br/7207220948947629
 active: true
+order: 5
 ---
 
 <b>Short Bio</b><br/>
